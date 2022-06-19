@@ -1,3 +1,5 @@
+var DAMenu = newMenu("Dissociation Assay Menu Tool", newArray("(1) Extractor", "(2) Excluder", "(3) Corrector", "-", "(4) Analyzer", "(5) Restitcher"));
+
 macro "Dissociation Assay Menu Tool - C000T0d14DTad14A"{
 	cmd = getArgument();
 	
