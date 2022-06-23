@@ -762,7 +762,8 @@ macro "Dissociation Assay Menu Tool - C000T0d14DTad14A"{
 		setThreshold(50, 255);
 		run("Create Mask");
 		imageCalculator("Add create", "Base2","mask");
-		setThreshold(0, 94);
+		run("Threshold...");
+		waitForUser("Please adjust threshold.");
 		run("Create Mask");
 		run("Analyze Particles...", "size=3000-Infinity show=[Count Masks] display clear summarize overlay add");
 		selectWindow("Base");
